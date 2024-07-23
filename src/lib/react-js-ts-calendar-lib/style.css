@@ -1,0 +1,71 @@
+.calendar {
+	width: 350px;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #3498db;
+	color: #fff;
+}
+
+.icon {
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+.current-month {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.days {
+	display: flex;
+	background-color: #f1f1f1;
+	padding: 10px 0;
+}
+
+.day {
+	width: 14.28%;
+	text-align: center;
+	font-weight: bold;
+	color: #333;
+}
+
+.body {
+	padding: 10px;
+}
+
+.row {
+	display: flex;
+}
+
+.cell {
+	width: 14.28%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border: 1px solid #e0e0e0;
+}
+
+.cell:hover {
+	background-color: #f0f0f0;
+}
+
+.cell.disabled {
+	color: #ccc;
+}
+
+.cell.selected {
+	background-color: #3498db;
+	color: #fff;
+}
